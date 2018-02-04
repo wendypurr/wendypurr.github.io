@@ -12,63 +12,65 @@
 </head>
 
 <body>
-<header>
-    <div id="header-image">
+<div class="content">
+    <header id="header">
+        <div id="header-image">
+            <img id="headerLogo" src="images/purrfect_white1.jpg" alt="Purrfect Space Logo" width="125" height="125">
+        </div>
+        <div id="header-menu">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="purrhome.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="aboutpurr.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="purrprojects.html">PROJECTS</a>
+                    </li>
+                    <li>
+                        <a href="https://www.etsy.com/uk/shop/PurrfectSpace">SHOP</a>
+                    </li>
+                    <li>
+                        <a href="purrcontact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        <img id="headerLogo" src="images/purrfect_white1.jpg" alt="Purrfect Space Logo" width="125" height="125">
+    <div class="page-divider">
 
     </div>
-    <div id="header-menu">
-        <nav>
-            <ul>
-                <li>
-                    <a href="purrhome.html">HOME</a>
-                </li>
-                <li>
-                    <a href="aboutpurr.html">ABOUT</a>
-                </li>
-                <li>
-                    <a href="purrprojects.html">PROJECTS</a>
-                </li>
-                <li>
-                    <a href="https://www.etsy.com/uk/shop/PurrfectSpace">SHOP</a>
-                </li>
-                <li>
-                    <a href="purrcontact.html">CONTACT</a>
-                </li>
-            </ul>
-        </nav>
+
+
+    <div class="gallery">
+        <div><img class="item" src="images/zawieszka3.JPG"/></div>
+        <div><img class="item" src="images/naszyjnik_blue3.JPG"/></div>
     </div>
-</header>
 
+    <div>
+        <p>
+            Welcome to my Etsy shop! I'm glad that you stopped by to take a look around and I hope you are having a
+            great
+            time !
+            <br> Purrfect Space is my little piece of the world where I share my handmade items.
+            <br> Most of them are made from materials not typically associated with jewellery which gives them this
+            special
+            look
+            and
+            feel.
+            <br> Don’t be afraid - they wear same or better than traditional ones !
+        </p>
+    </div>
 
-<div class="page-divider">
-
-</div>
-
-<div class="gallery">
-    <img src="images/zawieszka3.JPG"/>
-    <img src="images/naszyjnik_blue3.JPG"/>
-</div>
-
-<div>
-    <p>
-        Welcome to my Etsy shop! I'm glad that you stopped by to take a look around and I hope you are having a great
-        time !
-        <br> Purrfect Space is my little piece of the world where I share my handmade items.
-        <br> Most of them are made from materials not typically associated with jewellery which gives them this special
-        look
-        and
-        feel.
-        <br> Don’t be afraid - they wear same or better than traditional ones !
-    </p>
-</div>
-
-<div id="footer">
-    <div id="social">
-        <a target="_blank" href="http://instagram.com/purrfectspace">
-            <img src="images/instagram-footer-icon.png">
-        </a>
+    <div id="footer">
+        <div id="social">
+            <a target="_blank" href="http://instagram.com/purrfectspace">
+                <img src="images/instagram-footer-icon.png">
+            </a>
+        </div>
     </div>
 </div>
 
@@ -77,7 +79,11 @@
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
-        $('.gallery').slick({dots: true})
+        $('.gallery').slick({
+            dots: true,
+            speed: 300,
+            slidesToShow: 1
+        })
     });
 </script>
 
