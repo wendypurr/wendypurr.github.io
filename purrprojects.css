@@ -1,0 +1,72 @@
+body {
+    background-color: #f1fafc
+}
+
+.content {
+    font-family: 'Open Sans', sans-serif;
+    font-size: medium;
+    color: #5c5c5c;
+    width: 70%;
+    margin: auto;
+    align-content: center;
+    display: block;
+}
+#header-menu nav ul li {
+    display: inline;
+    font-size: 16pt;
+    padding: 30px;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 50px 50px 50px;
+    height: 120px;
+}
+
+#header-menu {
+    display: inline;
+    font-size: 16pt;
+    padding: 30px; 
+}
+a:link {
+    color: grey;
+    text-decoration: none;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: grey;
+    text-decoration: none;
+}
+
+a:active {
+    color: black
+}
+
+.item {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.item img{
+    max-width: 20em;
+}
+
+#footer {
+    display: flex;
+    align-content: center;
+}
+
+.instalogo {
+    max-width: 2em;   
+}
+
+p {
+    font-size: 85%;
+}
