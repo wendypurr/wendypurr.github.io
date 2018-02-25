@@ -11,25 +11,7 @@ body {
     align-content: center;
     display: block;
 }
-#header-menu nav ul li {
-    display: inline;
-    font-size: 16pt;
-    padding: 30px;
-}
 
-#header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 40px 50px 50px 50px;
-    height: 120px;
-}
-
-#header-menu {
-    display: inline;
-    font-size: 16pt;
-    padding: 30px; 
-}
 a:link {
     color: grey;
     text-decoration: none;
