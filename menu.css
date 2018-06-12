@@ -1,10 +1,4 @@
-#header-menu nav ul li {
-    display: inline;
-    font-size: 16pt;
-    padding: 30px;
-}
-
-#header {
+.header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,8 +6,55 @@
     height: 120px;
 }
 
-#header-menu {
+.menu nav ul li {
     display: inline;
     font-size: 16pt;
     padding: 30px;
+}
+
+.menu {
+    display: inline;
+    font-size: 16pt;
+    padding: 30px;
+}
+
+.menu ul {
+    margin: 0;
+}
+
+/*Create a horizontal list with spacing*/
+.menu li {
+    list-style-type: none;
+    float: left;
+}
+
+/*Style for menu links*/
+.menu li a {
+    display: block;
+    min-width: 140px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    color: grey;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu-button {
+    text-decoration: none;
+    color: black;
+    background: lightgrey;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
 }
