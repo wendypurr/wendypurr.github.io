@@ -1,15 +1,134 @@
 body {
-    background-color: #f1fafc
+    background-color: #f9fafa;
+    display: flex;
 }
-
-.content {
+.page {
     font-family: 'Open Sans', sans-serif;
     font-size: medium;
     color: #5c5c5c;
     width: 70%;
     margin: auto;
-    align-content: center;
+}
+
+#header {
+    display: flex; 
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+#header-image {
+   margin-left: 20%;
+   margin-top: 20px;  
+}
+
+#navigator {  
+    font-size: 16pt;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+
+ul {
+margin: 0;
+
+    
+}
+/*Create a horizontal list with spacing*/
+li {
+    list-style-type: none;
+    float: left;
+}
+/*Style for menu links*/
+li a {
+    display:block;
+    min-width:140px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    color:grey;
+    
+}
+/*Hover state for top level links*/
+li:hover {
+    color: grey;
+    text-decoration: underline;
+}
+li:link {
+    color: grey;
+    text-decoration: none;
+}
+
+
+
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+    text-decoration: none;
+    color: black;
+    background: lightgrey;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+}
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
     display: block;
+}
+/*Responsive Styles*/
+@media screen and (max-width : 760px){
+    /*Make dropdown links appear inline*/
+    ul {
+       
+        display: none;
+    }
+    /*Create vertical spacing*/
+    li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+   ul li, li a {
+        width: 100%;
+    }
+    /*Display 'show menu' link*/
+    .show-menu {
+        display: block;
+    }
+
+    #header-image {
+        display: none;
+   }
+           
+   #header {
+       display: flex;
+       justify-content: center;
+       margin-bottom: 10px;
+   }
+
+   .item {
+       flex-direction: column;
+   }
+
+   .page-divider {
+     visibility: hidden;
+   }
+
+   }
+
+
+
+.page-divider {
+    border-bottom: 1px solid;
+    color: lightgray;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 255px;
+    display: block;
+    max-width: 60%;
 }
 
 .gallery img {
@@ -25,35 +144,6 @@ body {
     align-items: center;
     max-width: 100%;
     max-height: 80%;
-}
-
-.page-divider {
-    border-bottom: 1px solid;
-    margin-top: 20px;
-    margin-bottom: 15px;
-    margin-left: 255px;
-    color: #ddd6d6;
-    display: block;
-    max-width: 60%;
-}
-
-a:link {
-    color: grey;
-    text-decoration: none;
-}
-
-a:hover {
-    color: grey;
-    text-decoration: underline;
-}
-
-a:visited {
-    color: grey;
-    text-decoration: none;
-}
-
-a:active {
-    color: black
 }
 
 

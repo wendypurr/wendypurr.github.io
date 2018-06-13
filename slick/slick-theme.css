@@ -121,6 +121,7 @@
 
 .slick-dots
 {
+    visibility: hidden;
     position: absolute;
     bottom: -25px;
 
