@@ -1,0 +1,50 @@
+.nav-item {
+font-size : x-large;
+padding-left: 10%;
+
+}
+
+.logo {
+margin-right: 5%;
+margin-left: 15%;
+margin-top: 1%;
+margin-bottom: 1%;
+
+}
+
+@media screen and (max-width : 1000px){
+    footer {
+        position: relative !important;
+    }
+}
+
+
+footer a {
+    size: 10px;
+}
+
+body {
+    color:#5c5c5c;
+  
+}
+
+
+p1 {
+    font-size: 1.2em;
+}
+
+p2 {font-size: 1.2em;
+}
+
+p3 {
+    color: rgb(111, 121, 27);
+}
+
+p4 {
+    color: rgb(29, 110, 93);
+}
+
+
+
+
+
